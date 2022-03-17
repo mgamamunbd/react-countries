@@ -13,7 +13,6 @@ function App() {
 function LoadCountries() {
   const [countries, setCountries] = useState([]);
   // console.log(countries);
-
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
       .then((response) => response.json())
